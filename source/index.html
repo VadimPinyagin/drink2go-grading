@@ -41,50 +41,56 @@
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
-      <!-- <section class="swiper">
+      <section class="slider">
         <h2 class="visually-hidden">Слайдер.Новинки</h2>
-        <button class="swiper-button-prev swiper__arrow-prev" type="button" aria-label="Листать в право"></button>
-        <div class="container swiper__container swiper-wrapper">
-          <div class="swiper-slide">
-            <h3 class="swiper-slide__title">Декаф Флэт Уайт</h3>
-            <picture>
-              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/flat-white-img-desktop@1x.webp 1x, images/swiper-images/flat-white-img-desktop@2x.webp 2x">
-              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/flat-white-img-desktop@1x.png 1x, images/swiper-images/flat-white-img-desktop@2x.png 2x">
-              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/flat-white-img-tablet@1x.webp 1x, images/swiper-images/flat-white-img-tablet@2x.webp 2x">
-              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/flat-white-img-tablet@1x.png 1x, images/swiper-images/flat-white-img-tablet@2x.png 2x">
-              <img class="swiper-slide__image" width="280" height="280" src="images/swiper-images/flat-white-img-mobile@1x.png" srcset="images/flat-white-img-mobile@1x.webp, images/swiper-images/flat-white-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
-            </picture>
-            <p class="swiper-slide__new">новинка!</p>
-            <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
-            <div class="swiper-price">
-              <ul class="swiper-price__list">
-                <li class="swiper-price__old">295&#8381;</li>
-                <li class="swiper-price__new">225&#8381;</li>
-              </ul>
-              <button class="button swiper-price__button" type="button">Заказать</button>
-            </div>
+        <div class="controls" aria-label="Управление слайдами">
+          <button class="button button-radio" type="button" aria-current="true" aria-label="Показать 1 из 4"></button>
+          <button class="button button-radio" type="button" aria-label="Показать 2 из 4"></button>
+          <button class="button button-radio" type="button" aria-label="Показать 3 из 4"></button>
+          <button aria-label="Предыдущий" type="button" class="button button-prev"></button>
+          <button aria-label="Следующий" type="button" class="button button-next"></button>
+        </div>
+        <div class="slides">
+          <div class="slide" id="carousel-item-1">
+            <h3 class="swiper-slide__title" id="item-1-label">Декаф Флэт Уайт</h3>
+              <picture>
+                <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/flat-white-img-desktop@1x.webp 1x, images/swiper-images/flat-white-img-desktop@2x.webp 2x">
+                <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/flat-white-img-desktop@1x.png 1x, images/swiper-images/flat-white-img-desktop@2x.png 2x">
+                <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/flat-white-img-tablet@1x.webp 1x, images/swiper-images/flat-white-img-tablet@2x.webp 2x">
+                <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/flat-white-img-tablet@1x.png 1x, images/swiper-images/flat-white-img-tablet@2x.png 2x">
+                <img class="slide-img" width="280" height="280" src="images/swiper-images/flat-white-img-mobile@1x.png" srcset="images/flat-white-img-mobile@1x.webp, images/swiper-images/flat-white-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
+              </picture>
+              <p class="swiper-slide__new">новинка!</p>
+              <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
+              <div class="swiper-price">
+                <ul class="swiper-price__list">
+                  <li class="swiper-price__old">295&#8381;</li>
+                  <li class="swiper-price__new">225&#8381;</li>
+                </ul>
+                <button class="button swiper-price__button" type="button">Заказать</button>
+              </div>
           </div>
-          <div class="swiper-slide">
-            <h3 class="swiper-slide__title">Декаф Флэт Уайт</h3>
-            <picture>
-              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/lavender-img-desktop@1x.webp 1x, images/swiper-images/lavender-img-desktop@2x.webp 2x">
-              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/lavender-img-desktop@1x.png 1x, images/swiper-images/lavender-img-desktop@2x.png 2x">
-              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/lavender-img-tablet@1x.webp 1x, images/swiper-images/lavender-img-tablet@2x.webp 2x">
-              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/lavender-img-tablet@1x.png 1x, images/swiper-images/lavender-img-tablet@2x.png 2x">
-              <img class="swiper-slide__image" width="280" height="280" src="images/swiper-images/lavender-img-mobile@1x.png" srcset="images/lavender-img-mobile@1x.webp, images/swiper-images/lavender-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
-            </picture>
-            <p class="swiper-slide__new">новинка!</p>
-            <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="swiper-price">
-              <ul class="swiper-price__list">
-                <li class="swiper-price__old">295&#8381;</li>
-                <li class="swiper-price__new">225&#8381;</li>
-              </ul>
-              <button class="button swiper-price__button" type="button">Заказать</button>
-            </div>
+          <div class="slide" id="carousel-item-2">
+            <h3 class="swiper-slide__title" id="item-2-label">Декаф Флэт Уайт</h3>
+              <picture>
+                <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/lavender-img-desktop@1x.webp 1x, images/swiper-images/lavender-img-desktop@2x.webp 2x">
+                <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/lavender-img-desktop@1x.png 1x, images/swiper-images/lavender-img-desktop@2x.png 2x">
+                <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/lavender-img-tablet@1x.webp 1x, images/swiper-images/lavender-img-tablet@2x.webp 2x">
+                <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/lavender-img-tablet@1x.png 1x, images/swiper-images/lavender-img-tablet@2x.png 2x">
+                <img class="swiper-slide__image" width="280" height="280" src="images/swiper-images/lavender-img-mobile@1x.png" srcset="images/lavender-img-mobile@1x.webp, images/swiper-images/lavender-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
+              </picture>
+              <p class="swiper-slide__new">новинка!</p>
+              <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
+              <div class="swiper-price">
+                <ul class="swiper-price__list">
+                  <li class="swiper-price__old">295&#8381;</li>
+                  <li class="swiper-price__new">225&#8381;</li>
+                </ul>
+                <button class="button swiper-price__button" type="button">Заказать</button>
+              </div>
           </div>
-          <div class="swiper-slide">
-            <h3 class="swiper-slide__title">Декаф Флэт Уайт</h3>
+        <div class="slide" id="carousel-item-3">
+            <h3 class="swiper-slide__title" id="item-3-label">Декаф Флэт Уайт</h3>
             <picture>
               <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/espresso-img-desktop@1x.webp 1x, images/swiper-images/espresso-img-desktop@2x.webp 2x">
               <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/espresso-img-desktop@1x.png 1x, images/swiper-images/espresso-img-desktop@2x.png 2x">
@@ -92,19 +98,18 @@
               <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/espresso-img-tablet@1x.png 1x, images/swiper-images/espresso-img-tablet@2x.png 2x">
               <img class="swiper-slide__image" width="280" height="280" src="images/swiper-images/espresso-img-mobile@1x.png" srcset="images/espresso-img-mobile@1x.webp, images/swiper-images/espresso-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
             </picture>
-            <p class="swiper-slide__new">новинка!</p>
-            <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="swiper-price">
-              <ul class="swiper-price__list">
-                <li class="swiper-price__old">295&#8381;</li>
-                <li class="swiper-price__new">225&#8381;</li>
-              </ul>
-              <button class="button swiper-price__button" type="button">Заказать</button>
-            </div>
+              <p class="swiper-slide__new">новинка!</p>
+              <p class="swiper-slide__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня</p>
+              <div class="swiper-price">
+                <ul class="swiper-price__list">
+                  <li class="swiper-price__old">295&#8381;</li>
+                  <li class="swiper-price__new">225&#8381;</li>
+                </ul>
+                <button class="button swiper-price__button" type="button">Заказать</button>
+              </div>
           </div>
         </div>
-        <button class="swiper__arrow-next swiper-button-next" type="button" aria-label="Листать в лево"></button>
-      </section> -->
+      </section>
       <section class="advantages">
         <div class="container advantages__container">
           <h2 class="advantages__title">Преимущества</h2>
