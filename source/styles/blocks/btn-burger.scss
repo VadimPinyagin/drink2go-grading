@@ -1,12 +1,16 @@
 .btn-burger {
   background-color: transparent;
   border: none;
-  width: 40px;
+  width: 60px;
   height: 60px;
   padding: 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &:active {
+    background-color: var( --base-primary-active, #f0ebff);
   }
 }

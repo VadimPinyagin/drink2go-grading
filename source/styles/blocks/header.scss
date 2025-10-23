@@ -1,4 +1,11 @@
 .header__logo {
+  padding-block-start: 2px;
+  padding-inline: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     text-decoration: none;
     color: inherit;
