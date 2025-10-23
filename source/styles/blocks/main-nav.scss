@@ -1,0 +1,232 @@
+.main-nav {
+  width: 280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    justify-items: start;
+    column-gap: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+    display: flex;
+    column-gap: 164px;
+  }
+}
+
+.main-nav__group {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.main-nav--is-close {
+  .main-nav__list {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      @include list-reset;
+      display: flex;
+      grid-area: 1;
+      column-gap: 2px;
+      margin-inline-end: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      column-gap: 22px;
+      margin-inline-end: 160px;
+    }
+  }
+
+  .main-nav__btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 16px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 5px 0 0 #000000, 0 10px 0 0 #000000;
+  }
+}
+
+.main-nav--is-open {
+  align-items: center;
+  background-color: transparent;
+
+  .main-nav__btn {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 1px;
+      width: 16px;
+      height: 2px;
+      background-color: #000000;
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+
+  .main-nav__list {
+    @include list-reset;
+    background-color: var(--base-white, #ffffff);
+    grid-column: 1 / 4;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+      display: flex;
+      grid-area: 1;
+      column-gap: 2px;
+      margin-inline-end: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      column-gap: 22px;
+      margin-inline-end: 160px;
+    }
+  }
+}
+
+.main-nav__item {
+  border-top: 1px solid var(--secondary-gray, #f0ebff);
+}
+
+.main-nav__link {
+  @include link-reset;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  padding-block: 21px 19px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 31px 20px;
+  }
+}
+
+.main-nav__account,
+.main-nav__basket {
+  @include link-reset;
+  width: 60px;
+  height: 60px;
+  position: relative;
+
+  &:active {
+    background-color: var(--base-primary-active, #f0ebff);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding-inline: 22px;
+
+    &:hover {
+      color: var(--base-primary, #7859cf);
+      &::before {
+        background-color: var(--base-primary, #7859cf);
+        color: var(--base-primary, #7859cf);
+      }
+    }
+
+    &:active {
+      color: var(--base-primary, #7859cf);
+      &::before {
+        background-color: var(--base-primary, #7859cf);
+      }
+    }
+  }
+}
+
+.main-nav__account {
+  @media (min-width: $desktop-width) {
+    margin-inline-end: 18px;
+  }
+}
+
+.main-nav__account::before {
+  mask-image: url("../../icons/account.svg");
+  mask-repeat: no-repeat;
+}
+
+.main-nav__basket::before {
+  mask-image: url("../../icons/product-basket.svg");
+  mask-repeat: no-repeat;
+}
+
+.main-nav__account::before,
+.main-nav__basket::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--base-black, #333333);
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.main-nav__account-enter,
+.main-nav__basket-enter {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.main-nav__link--active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 103px;
+  height: 2px;
+  background-color: var(--base-primary, #7859cf);
+  bottom: 0;
+  left: 0;
+}

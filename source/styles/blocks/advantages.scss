@@ -1,0 +1,134 @@
+.advantages {
+  padding-block: 51px;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 54px 98px;
+  }
+}
+
+.advantages__title {
+  margin-block: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--base-primary, #7859cf);
+  text-align: center;
+}
+
+.advantages__text {
+  margin-block: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  padding-block: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.advantages-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  padding-block-start: 29px;
+  row-gap: 31px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 27px 30px;
+    padding-block-start: 55px;
+  }
+}
+
+.advantages-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 72px;
+    row-gap: 10px;
+  }
+}
+
+.advantages-list__item--speed {
+  background: url("../../icons/speed.svg") no-repeat top center / 52px 56px;
+
+  @media (min-width: $tablet-width) {
+    background-position: top left;
+  }
+}
+
+.advantages-list__item--comfort {
+  background: url("../../icons/comfort.svg") no-repeat top center / 52px 56px;
+
+  @media (min-width: $tablet-width) {
+    background-position: top left;
+  }
+}
+
+.advantages-list__item--cheerfulness {
+  background: url("../../icons/cheerfulness.svg") no-repeat top center / 52px 56px;
+
+  @media (min-width: $tablet-width) {
+    background-position: top left;
+  }
+}
+
+.advantages-list__item--ecology {
+  background: url("../../icons/ecology.svg") no-repeat top center / 52px 56px;
+
+  @media (min-width: $tablet-width) {
+    background-position: top left;
+  }
+}
+
+.advantages-list__item-title {
+  @include advantages-title-mobile;
+  margin-block: 0;
+  text-align: center;
+  padding-block-start: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-start: 0;
+    font-size: 24px;
+    line-height: 36px;
+    grid-column: 2/4;
+    text-align: start;
+    align-self: start;
+  }
+}
+
+.advantages-list__item-text br {
+  display: inline;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages-list__item--ecology .advantages-list__item-text br {
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.advantages-list__item-text {
+  margin-block: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 2/4;
+    text-align: start;
+  }
+}

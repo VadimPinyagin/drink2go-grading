@@ -1,0 +1,12 @@
+.btn-burger {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 60px;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

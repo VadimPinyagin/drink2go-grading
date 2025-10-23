@@ -1,5 +1,19 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.header__logo {
+  @media (min-width: $desktop-width) {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+}
+
+.header__logo span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

@@ -1,0 +1,31 @@
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 10px;
+  }
+}
+
+.sorting__label {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 3px;
+}
+
+.sorting__select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  width: 165px;
+  height: 32px;
+  padding-inline: 13px;
+  font: inherit;
+  text-transform: lowercase;
+  color: var(--base-primary, #7859cf);
+}

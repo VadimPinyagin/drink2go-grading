@@ -1,0 +1,36 @@
+.swiper-price {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding-block: 9px;
+  height: 58px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row-start: 4;
+  }
+}
+
+.swiper-price__list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.swiper-price__old {
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: var(--base-primary, #7859cf);
+}
+
+.swiper-price__new {
+  @include text-price;
+}
+
+.swiper-price__button {
+  @include base-button-style;
+  padding-inline: 25px;
+  padding-block: 10px;
+}

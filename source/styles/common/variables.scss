@@ -1,1 +1,17 @@
-/* здесь используйте глобальные переменные */
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+:root {
+  --slider-background: #f3ebe1;
+  --base-black: #333333;
+  --base-primary: #7859cf;
+  --base-primary-active: #f0ebff;
+  --base-white: #ffffff;
+  --smoky-white: #f8f8f8;
+  --base-gray: #bdbdbd;
+  --light-gray: #e2e2e2;
+  --secondary-gray: #f0ebff;
+
+  --swiper-navigation-top-offset: 22px;
+  --swiper-navigation-sides-offset: 0;
+}

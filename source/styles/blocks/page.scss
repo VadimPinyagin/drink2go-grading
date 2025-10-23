@@ -1,0 +1,18 @@
+.page {
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  color: var(--base-black, #333333);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.page__body {
+  min-width: max-content;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

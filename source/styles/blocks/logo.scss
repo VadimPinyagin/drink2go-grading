@@ -1,0 +1,5 @@
+.logo__image {
+  @media (min-width: $tablet-width) {
+    padding-block-start: 5px;
+  }
+}

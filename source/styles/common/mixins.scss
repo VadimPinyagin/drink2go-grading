@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link-reset {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin text-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin base-button-style {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--base-white, #f3ebe1);
+  border: none;
+  border-radius: 4px;
+  background-color: var(--base-primary, #7859cf);
+}
+
+@mixin swiper-button {
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  padding: 0;
+  position: absolute;
+}
+
+@mixin advantages-title-mobile {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@mixin fieldset-mobile-style {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin card-title-mobile {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+@mixin card-title-tablet {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin footer-title-style {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--base-primary, #7859cf);
+  margin: 0;
+}
+
+@mixin footer-link-style {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+}

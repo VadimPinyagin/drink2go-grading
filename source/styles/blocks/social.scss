@@ -1,0 +1,72 @@
+.social {
+  width: 280px;
+  margin: auto;
+  position: relative;
+  padding-block: 15px 27px;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100vh;
+    height: 1px;
+    background-color: var(--secondary-gray, #f0ebff);
+    box-shadow: 100vh 0 var(--secondary-gray, #f0ebff);
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-block: 29px 17px;
+  }
+}
+
+.social__logo {
+  padding-inline-end: 18px;
+  padding-block-start: 2px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-start: 5px;
+  }
+}
+
+.social__vk {
+  background-image: url("../../icons/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 50% 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.social__pinterest {
+  background-image: url("../../icons/pinterest-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social__ok {
+  background-image: url("../../icons/ok-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}
