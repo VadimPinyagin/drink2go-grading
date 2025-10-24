@@ -2,7 +2,6 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 
 :root {
-  --slider-background: #f3ebe1;
   --base-black: #333333;
   --base-primary: #7859cf;
   --base-primary-active: #f0ebff;
@@ -11,7 +10,8 @@ $desktop-width: 1440px;
   --base-gray: #bdbdbd;
   --light-gray: #e2e2e2;
   --secondary-gray: #f0ebff;
-
+  --decaf-flute-white: #f3ebe1;
+  --lavender-latte:#f1e8ff;
   --swiper-navigation-top-offset: 22px;
   --swiper-navigation-sides-offset: 0;
 }

@@ -1,8 +1,8 @@
 const slider = document.querySelector('.slider');
 const slides = slider.querySelectorAll('.slide');
-const controlButtons = slider.querySelectorAll('.button-radio');
-const prevButton = slider.querySelector('.button-prev');
-const nextButton = slider.querySelector('.button-next');
+const controlButtons = slider.querySelectorAll('.slider__controls-button-radio');
+const prevButton = slider.querySelector('.slider__prev');
+const nextButton = slider.querySelector('.slider__next');
 
 const activeSlides = 'slide--active';
 const activeButton = 'active';
@@ -10,12 +10,28 @@ const inactiveButton = 'aria-disabled';
 const currentButton = 'aria-current';
 let currentSlide = 0;
 
+const getColorFromData = (color) => {
+  switch (color) {
+    case 'decaf-flute-white':
+      return 'var(--decaf-flute-white, #f3ebe1)';
+    case 'lavender-latte':
+      return 'var(--lavender-latte, #f1e8ff)';
+    case 'triple-espresso':
+      return 'var(--base-gray, #bdbdbd)';
+    default:
+      return '#f3ebe1';
+  }
+};
+
 export const initializeSlider = () => {
   document.addEventListener('DOMContentLoaded', () => {
+
     const updateSlider = () => {
       slides.forEach((slide, index) => {
         if (index === currentSlide) {
           slide.classList.add(activeSlides);
+          const newColor = slide.getAttribute('data-color');
+          slider.style.backgroundColor = getColorFromData(newColor);
         } else {
           slide.classList.remove(activeSlides);
         }
