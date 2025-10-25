@@ -40,10 +40,11 @@
   background-position-y: 317px;
   margin-block-start: var(--balance-height-top);
   margin-block-end: var(--balance-height-bottom);
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
     width: 80px;
+    min-height: calc(var(--height-slider-mobile) + 54px);
     background-position-x: center;
     background-position-y: 292px;
     z-index: 1;
@@ -58,7 +59,7 @@
     background: linear-gradient(to right,var(--base-primary, #7859cf), transparent) no-repeat 0 0 / 100% 200%, url("../../icons/arrow-slider-left.svg") no-repeat;
     background-size: auto,
     21px 21px;
-    background-position: 0 0, center 317px;
+    background-position: 0 0, center 311px;
     opacity: 0.3;
   }
 
