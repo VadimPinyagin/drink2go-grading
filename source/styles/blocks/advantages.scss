@@ -2,7 +2,7 @@
   padding-block: 51px;
 
   @media (min-width: $tablet-width) {
-    padding-block: 54px 98px;
+    padding-block: 42px 98px;
   }
 }
 
@@ -42,7 +42,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 27px 20px;
+    gap: 27px 24px;
     padding-block-start: 55px;
   }
 

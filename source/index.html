@@ -142,7 +142,8 @@
           <p class="catalog__text">Каталог кофейных напитков</p>
           <form class="filter catalog__filter" action="https://echo.htmlacademy.ru">
             <fieldset class="filter__price">
-            <legend class="filter__price-legend">Цена</legend>
+            <h3 class="filter__title filter__price-legend">Цена</h3>
+            <legend class="filter__price-legend"></legend>
               <div class="filter__range">
                 <div class="filter__range-scale"></div>
                 <label class="filter__price-from" for="min-num">
@@ -155,7 +156,8 @@
               </div>
             </fieldset>
             <fieldset class="filter__additive">
-              <legend class="filter__additive-legend">Наличие молока</legend>
+              <h3 class="filter__title filter__additive-legend">Наличие молока</h3>
+              <legend class="visually-hidden"></legend>
               <ul class="filter__additive-list">
                 <li class="filter__additive-item">
                   <input class="filter__additive-radio" type="radio" name="additive" value="any" id="additive" checked>
@@ -176,7 +178,8 @@
               </ul>
             </fieldset>
             <fieldset class="filter__country">
-              <legend class="filter__country-legend">Страна произрастания</legend>
+              <h3 class="filter__title filter__country-legend">Страна произрастания</h3>
+              <legend class="visually-hidden"></legend>
               <ul class="filter__country-list">
                 <li class="filter__country-item">
                     <input class="filter__country-input" id="brazil" name="brazil" type="checkbox" checked>
