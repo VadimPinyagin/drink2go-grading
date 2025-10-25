@@ -32,6 +32,7 @@ export const initializeSlider = () => {
           slide.classList.add(activeSlides);
           const newColor = slide.getAttribute('data-color');
           slider.style.backgroundColor = getColorFromData(newColor);
+          slider.style.setProperty('--slider-background', getColorFromData(newColor));
         } else {
           slide.classList.remove(activeSlides);
         }

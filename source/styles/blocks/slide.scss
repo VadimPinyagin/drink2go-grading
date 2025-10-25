@@ -1,7 +1,5 @@
 .slide {
   position: absolute;
-  width: 100%;
-  height: 100%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
@@ -33,6 +31,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1;
     grid-row-start: 4;
+    padding-inline-end: 20px;
   }
 }
 
@@ -71,12 +70,11 @@
   grid-area: 3/1;
 
   @media (min-width: $tablet-width) {
-    grid-column: 1/6;
     grid-row-start: 2;
     font-size: 56px;
     line-height: 80px;
     text-align: start;
-    padding-inline: 85px;
+    padding-inline-start: 85px;
   }
 }
 
@@ -91,10 +89,9 @@
   padding-block: 5px;
 
   @media (min-width: $tablet-width) {
-    grid-row-start: 1;
     padding-block-start: 42px;
-    padding-inline-start: 11px;
     letter-spacing: 0.04em;
+    padding-inline-end: 18px;
   }
 }
 
@@ -125,11 +122,9 @@ picture:has(.slide__image) {
   grid-row: 1;
 
   @media (min-width: $tablet-width) {
-    grid-row: 4/5;
-    grid-column: 1/6;
-    margin-block-start: 70px;
-    margin-inline-end: 59px;
-    text-align: start;
-    padding-inline-start: 116px;
+    grid-row: 5/5;
+    grid-column: 1;
+    margin-block-start: 10px;
+    padding-inline-end: 18px;
   }
 }
