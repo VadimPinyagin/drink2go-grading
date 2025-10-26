@@ -1,3 +1,5 @@
+/* range */
+@import "../vendor/nouislider/nouislider.min.css";
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/base.scss";
@@ -15,13 +17,10 @@
 @import "./blocks/advantages.scss";
 @import "./blocks/filter.scss";
 @import "./blocks//catalog.scss";
-@import "./blocks/poduct-card.scss";
+@import "./blocks/product-card.scss";
 @import "./blocks/sorting.scss";
 @import "./blocks/pagination.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/footer-nav.scss";
 @import "./blocks/logo.scss";
-
-/* range */
-@import "../vendor/nouislider/nouislider.min.css";

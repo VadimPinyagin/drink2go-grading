@@ -168,6 +168,7 @@
 
     &:hover {
       color: var(--base-primary, #7859cf);
+
       &::before {
         background-color: var(--base-primary, #7859cf);
         color: var(--base-primary, #7859cf);
@@ -176,6 +177,7 @@
 
     &:active {
       color: var(--base-primary, #7859cf);
+
       &::before {
         background-color: var(--base-primary, #7859cf);
       }
@@ -230,21 +232,21 @@
   }
 }
 
-.main-nav__link--active{
+.main-nav__link--active {
   @media (min-width: $tablet-width) {
     color: var(--base-primary, #7859cf);
   }
 
   &::after {
-     @media (min-width: $tablet-width){
-    content: "";
-    display: block;
-    position: absolute;
-    width: 103px;
-    height: 2px;
-    background-color: var(--base-primary, #7859cf);
-    bottom: 0;
-    left: 0;
-  }
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 103px;
+      height: 2px;
+      background-color: var(--base-primary, #7859cf);
+      bottom: 0;
+      left: 0;
+    }
   }
 }

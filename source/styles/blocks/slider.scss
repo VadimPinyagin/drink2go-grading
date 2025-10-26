@@ -6,10 +6,10 @@
   margin: auto;
   overflow: hidden;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     width: auto;
-    background: linear-gradient(to bottom, var(--slider-background, #f3ebe1 ) 641px, #ffffff 30%);
+    background: linear-gradient(to bottom, var(--slider-background, #f3ebe1) 641px, #ffffff 30%);
     padding-block-end: 0;
   }
 }
@@ -17,7 +17,7 @@
 .slider__wrapper {
   position: relative;
   width: 100%;
-  min-height: var(--height-slider-mobile);
+  min-height: var(--height-slider-mobile, 585px);
 
   @media (min-width: $tablet-width) {
     min-height: 828px;
@@ -33,32 +33,29 @@
   position: absolute;
   border: none;
   width: 20px;
-  min-height: calc(var(--height-slider-mobile) + var(--padding-slider-top) + var(--padding-slider-bottom));
+  min-height: calc(var(--height-slider-mobile, 585px) + var(--padding-slider-top, 19px) + var(--padding-slider-bottom, 50px));
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 21px 21px;
   background-position-y: 317px;
-  margin-block-start: var(--balance-height-top);
-  margin-block-end: var(--balance-height-bottom);
-  // outline: 1px solid red;
+  margin-block: var(--balance-height-top, 19px)  var(--balance-height-bottom, 50px);
 
   @media (min-width: $tablet-width) {
     width: 80px;
-    min-height: calc(var(--height-slider-mobile) + 54px);
+    min-height: calc(var(--height-slider-mobile, 585px) + 54px);
     background-position-x: center;
     background-position-y: 292px;
     z-index: 1;
   }
 }
 
-.slider__prev{
+.slider__prev {
   background-image: url("../../icons/arrow-slider-left.svg");
   left: -20px;
 
-   &:active {
-    background: linear-gradient(to right,var(--base-primary, #7859cf), transparent) no-repeat 0 0 / 100% 200%, url("../../icons/arrow-slider-left.svg") no-repeat;
-    background-size: auto,
-    21px 21px;
+  &:active {
+    background: linear-gradient(to right, var(--base-primary, #7859cf), transparent) no-repeat 0 0 / 100% 200%, url("../../icons/arrow-slider-left.svg") no-repeat;
+    background-size: auto, 21px 21px;
     background-position: 0 0, center 311px;
     opacity: 0.3;
   }
@@ -74,9 +71,8 @@
   right: -20px;
 
   &:active {
-    background: linear-gradient(to right, transparent,var(--base-primary, #7859cf)) no-repeat 0 0 / 100% 200%, url("../../icons/arrow-slider-right.svg") no-repeat;
-    background-size: auto,
-    21px 21px;
+    background: linear-gradient(to right, transparent, var(--base-primary, #7859cf)) no-repeat 0 0 / 100% 200%, url("../../icons/arrow-slider-right.svg") no-repeat;
+    background-size: auto, 21px 21px;
     background-position: 0 0, center 317px;
     opacity: 0.3;
   }
@@ -96,5 +92,3 @@
   opacity: 0.5;
   pointer-events: none;
 }
-
-

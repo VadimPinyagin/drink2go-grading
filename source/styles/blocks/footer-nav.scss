@@ -34,7 +34,7 @@
 .footer-nav__title {
   @include footer-title-style;
   letter-spacing: 0.03em;
-  padding-block: 10px 10px;
+  padding-block: 10px;
 
   @media (min-width: $tablet-width) {
     grid-row: 2;
