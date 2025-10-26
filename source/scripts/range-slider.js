@@ -2,7 +2,7 @@ import {sliderElement} from './constants.js';
 
 export function rangeSlider(){
 
-    const formatForSlider = {
+  const formatForSlider = {
     from: function (formattedValue) {
       return Number(formattedValue); // Преобразуем форматированное значение в число
     },

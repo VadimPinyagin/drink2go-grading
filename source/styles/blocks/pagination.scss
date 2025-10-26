@@ -51,6 +51,7 @@
   &:disabled {
     background-color: var(--light-gra, #e2e2e2);
     color: var(--base-white, #ffffff);
+    pointer-events: none;
     cursor: default;
   }
 }

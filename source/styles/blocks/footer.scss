@@ -17,6 +17,8 @@
 }
 
 .footer__developer {
+  display: block;
+  text-decoration: none;
   position: relative;
   text-align: center;
   margin: 0;
@@ -26,13 +28,34 @@
   padding-inline-end: 15px;
   color: var(--base-gray, #bdbdbd);
 
+  &:hover {
+    color: var(--base-primary, #7859cf);
+
+    &::after {
+      background-color: var(--base-primary, #7859cf);
+    }
+  }
+
+  &:focus-visible {
+    color: var(--base-primary, #7859cf);
+  }
+
+  &:active {
+    color: var(--button-active, #593cac);
+
+    &::after {
+      background-color: var(--button-active, #593cac);
+    }
+  }
+
   &::after {
     content: "";
     display: block;
     width: 12px;
     height: 16px;
-    background-image: url("../../icons/logo-dev-icon.svg");
-    background-repeat: no-repeat;
+    mask-image: url("../../icons/logo-dev-icon.svg");
+    mask-repeat: no-repeat;
+    background-color: var(--base-gray, #bdbdbd);
     position: absolute;
     right: 37px;
     bottom: 30px;

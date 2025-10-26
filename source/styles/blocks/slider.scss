@@ -56,13 +56,13 @@
   &:active {
     background: linear-gradient(to right, var(--base-primary, #7859cf), transparent) no-repeat 0 0 / 100% 200%, url("../../icons/arrow-slider-left.svg") no-repeat;
     background-size: auto, 21px 21px;
-    background-position: 0 0, center 311px;
+    background-position: center;
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     left: -30px;
-    background-position: center 311px;
+    background-position: center;
   }
 }
 
@@ -73,16 +73,16 @@
   &:active {
     background: linear-gradient(to right, transparent, var(--base-primary, #7859cf)) no-repeat 0 0 / 100% 200%, url("../../icons/arrow-slider-right.svg") no-repeat;
     background-size: auto, 21px 21px;
-    background-position: 0 0, center 317px;
+    background-position: center;
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     right: -30px;
-    background-position: center 311px;
+    background-position: center;
 
     &:active {
-      background-position: 0 0, center 311px;
+      background-position: 0 0, center;
     }
   }
 }

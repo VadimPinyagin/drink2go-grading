@@ -44,8 +44,19 @@
 .footer-nav__link {
   @include footer-link-style;
   letter-spacing: 0.02em;
-}
 
+  &:hover {
+    color: var(--base-primary, #7859cf);
+  }
+
+  &:focus-visible {
+    color: var(--base-primary, #7859cf);
+  }
+
+  &:active {
+    color: var(--button-active, #593cac);
+  }
+}
 
 .footer__contacts {
   padding-block-end: 20px;
