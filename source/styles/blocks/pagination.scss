@@ -8,9 +8,8 @@
 
   @media (min-width: $tablet-width) {
     justify-content: end;
-    margin-inline-end: 3px;
-    padding-block-end: 89px;
-    gap: 21px;
+    padding-block:43px 89px;
+    gap: 20px;
   }
 }
 
@@ -65,6 +64,7 @@
 .pagination__item:first-child {
   .pagination__link {
     position: relative;
+    padding-inline: 20px;
 
     &::before {
       content: "";
@@ -79,6 +79,10 @@
       position: absolute;
       top: 15px;
       left: 15px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
 
     &:hover {
@@ -92,6 +96,8 @@
 .pagination__item:last-child {
   .pagination__link {
     position: relative;
+    padding-inline: 20px;
+    gap: 20px;
 
     &::before {
       content: "";
@@ -106,17 +112,16 @@
       position: absolute;
       top: 15px;
       left: 15px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
 
     &:hover {
       &::before {
         background-color: var(--base-white, #ffffff);
       }
-    }
-
-    @media (min-width: $tablet-width) {
-      // background-image: none;
-      // padding-inline: 18px;
     }
   }
 }

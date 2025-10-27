@@ -4,6 +4,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     justify-content: end;
@@ -18,8 +19,13 @@
 }
 
 .sorting__select {
+  position: relative;
   appearance: none;
   background-color: transparent;
+  background-image: url("../../icons/field-close.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 8px;
+  background-position: center right 9px;
   border: none;
   border-radius: 4px;
   width: 165px;
@@ -28,4 +34,20 @@
   font: inherit;
   text-transform: lowercase;
   color: var(--base-primary, #7859cf);
+
+  &:hover {
+    background-color: var(--primary-opacity, rgba(120, 89, 207, 0.25));
+  }
+
+  &:focus-visible {
+    background: transparent;
+    background-image: url("../../icons/field-open.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 8px;
+    background-position: center right 9px;
+  }
+}
+
+.sorting__option {
+  font: inherit;
 }

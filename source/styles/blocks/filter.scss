@@ -3,14 +3,33 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
   }
 }
 
 .filter__price {
   @include fieldset-mobile-style;
   padding-block-end: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+.filter__price-legend {
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.filter__additive-legend {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+    grid-row: 1;
+  }
 }
 
 .filter__range {
@@ -39,7 +58,7 @@
   @media (min-width: $tablet-width) {
     padding-block-start: 0;
     width: 87px;
-    margin-inline-end: 19px;
+    margin-inline-end: 7px;
   }
 }
 
@@ -54,7 +73,7 @@
 
   @media (min-width: $tablet-width) {
     width: 213px;
-    margin-block-end: 31px;
+    margin-block: 10px 31px;
     margin-inline-start: 8px;
   }
 }
@@ -136,8 +155,8 @@
   background-color: var(--base-gray, #bdbdbd);
 
   @media (min-width: $tablet-width) {
-    top: 19px;
-    left: 8px;
+    top: 20px;
+    left: 16px;
   }
 }
 
@@ -167,22 +186,39 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 87px;
+    width: 88px;
   }
 }
 
 .filter__additive {
   @include fieldset-mobile-style;
   padding-block-end: 32px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding-inline-start: 20px;
+  }
 }
 
 .filter__additive-legend {
   padding-block-end: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 20px
+  }
 }
 
 .filter__country-legend {
   padding-block-end: 18px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 4;
+    grid-row: 1;
+    padding-inline-start: 18px;
+  }
 }
+
 
 .filter__additive-list {
   @include list-reset;
@@ -237,6 +273,12 @@
   display: grid;
   gap: 10px;
   padding-block-end: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 4/6;
+    grid-row: 2/4;
+    padding-inline-start: 19px;
+  }
 }
 
 .filter__country-input {
@@ -284,10 +326,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding-inline-start: 10px;
-  }
 }
 
 .filter__country-item {
@@ -309,8 +347,8 @@
   @media (min-width: $tablet-width) {
     justify-content: center;
     flex-direction: row;
-    grid-row-start: 2;
-    grid-column: 1/4;
+    grid-row: 5;
+    grid-column: 1/6;
     padding-block-start: 10px;
     column-gap: 20px;
   }

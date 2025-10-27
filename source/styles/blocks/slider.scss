@@ -12,20 +12,49 @@
     background: linear-gradient(to bottom, var(--slider-background, #f3ebe1) 641px, #ffffff 30%);
     padding-block-end: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 0;
+    background: var(--slider-background, #f3ebe1);
+  }
 }
 
 .slider__wrapper {
   position: relative;
   width: 100%;
-  min-height: var(--height-slider-mobile, 585px);
+  min-height: 585px;
 
   @media (min-width: $tablet-width) {
     min-height: 828px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 714px;
   }
 }
 
 .slider__controls {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    column-gap: 8px;
+    top: 641px;
+    left: 579px;
+  }
+}
+
+.slider__controls-button-radio {
+  border: none;
+  width: 62px;
+  height: 4px;
+  background-color: var(--base-white, #ffffff);
+  transition: background-color 0.3s ease;
+
+  &[aria-current="true"] {
+    background-color: var(--base-primary, #7859cf);
+  }
 }
 
 .slider__prev,
