@@ -17,6 +17,10 @@
     padding-inline: 30px;
     column-gap: 98px;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 1px;
+  }
 }
 
 .product-card__title {

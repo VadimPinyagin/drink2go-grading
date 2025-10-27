@@ -10,6 +10,13 @@
     justify-content: end;
     gap: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3;
+    grid-column: 2;
+    padding-inline-end: 75px;
+    padding-block-start: 15px;
+  }
 }
 
 .sorting__label {

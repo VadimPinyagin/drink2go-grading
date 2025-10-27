@@ -11,6 +11,11 @@
     padding-block:43px 89px;
     gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 5;
+    grid-column: 2;
+  }
 }
 
 .pagination__link {
