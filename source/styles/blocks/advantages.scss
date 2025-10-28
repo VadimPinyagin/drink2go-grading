@@ -5,7 +5,7 @@
     padding-block: 42px 98px;
   }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-block: 101px 118px;
   }
 }
@@ -124,7 +124,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-position: center;
     padding-inline-start: 0;
     background-position: center top 73px;
     width: 318px;

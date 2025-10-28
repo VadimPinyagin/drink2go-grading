@@ -12,7 +12,6 @@
     grid-column: 1;
     grid-row: 3 / 5;
   }
-
 }
 
 .filter__price {
@@ -23,6 +22,7 @@
     grid-column: 1;
     grid-row: 2;
   }
+
   @media (min-width: $desktop-width) {
     padding-block-end: 15px;
   }
@@ -226,7 +226,7 @@
     grid-column: 2/4;
     grid-row: 2/3;
     padding-inline-start: 20px;
-     padding-block-end: 28px;
+    padding-block-end: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -240,7 +240,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
     grid-row: 1;
-    padding-inline-start: 20px
+    padding-inline-start: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -407,64 +407,64 @@
   }
 }
 
- .filter__country-button {
-    border: none;
-    border-radius: 4px;
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    height: 40px;
-    padding-inline: 20px;
+.filter__country-button {
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  height: 40px;
+  padding-inline: 20px;
 
-    @media (min-width: $desktop-width) {
-      padding-inline: 27px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-inline: 27px;
+  }
+}
+
+.filter__country-button[type="submit"] {
+  color: var(--base-white, #ffffff);
+  background-color: var(--base-primary, #7859cf);
+
+  &:hover {
+    background-color: var(--button-hover-focus, #9070ec);
   }
 
-  .filter__country-button[type="submit"] {
+  &:focus-visible {
+    background-color: var(--button-hover-focus, #9070ec);
+  }
+
+  &:active {
+    background-color: var(--button-active, #593cac);
+  }
+
+  &:disabled {
+    background-color: var(--base-gray, #bdbdbd);
+    cursor: default;
+  }
+}
+
+.filter__country-button[type="reset"] {
+  color: var(--base-primary, #7859cf);
+  background-color: var(--base-white, #ffffff);
+
+  &:hover {
+    background-color: var(--button-hover-focus, #9070ec);
     color: var(--base-white, #ffffff);
-    background-color: var(--base-primary, #7859cf);
-
-    &:hover {
-      background-color: var(--button-hover-focus, #9070ec);
-    }
-
-    &:focus-visible {
-      background-color: var(--button-hover-focus, #9070ec);
-    }
-
-    &:active {
-      background-color: var(--button-active, #593cac);
-    }
-
-    &:disabled {
-      background-color: var(--base-gray, #bdbdbd);
-      cursor: default;
-    }
   }
 
-  .filter__country-button[type="reset"] {
-    color: var(--base-primary, #7859cf);
-    background-color: var(--base-white, #ffffff);
-
-    &:hover {
-      background-color: var(--button-hover-focus, #9070ec);
-      color: var(--base-white, #ffffff);
-    }
-
-    &:focus-visible {
-      background-color: var(--button-hover-focus, #9070ec);
-      color: var(--base-white, #ffffff);
-    }
-
-    &:active {
-      background-color: var(--button-active, #593cac);
-    }
-
-    &:disabled {
-      background-color: var(--light-gra, #e2e2e2);
-      color: var(--base-white, #ffffff);
-      cursor: default;
-    }
+  &:focus-visible {
+    background-color: var(--button-hover-focus, #9070ec);
+    color: var(--base-white, #ffffff);
   }
+
+  &:active {
+    background-color: var(--button-active, #593cac);
+  }
+
+  &:disabled {
+    background-color: var(--light-gra, #e2e2e2);
+    color: var(--base-white, #ffffff);
+    cursor: default;
+  }
+}

@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: end;
-    padding-block:43px 89px;
+    padding-block: 43px 89px;
     gap: 20px;
   }
 
@@ -84,16 +84,6 @@
       position: absolute;
       top: 15px;
       left: 15px;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
-
-    &:hover {
-      &::before {
-        background-color: var(--base-white, #ffffff);
-      }
     }
   }
 }
@@ -117,17 +107,23 @@
       position: absolute;
       top: 15px;
       left: 15px;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
     }
+  }
+}
 
-    &:hover {
-      &::before {
-        background-color: var(--base-white, #ffffff);
-      }
-    }
+.pagination__item:first-child .pagination__link:hover::before {
+  background-color: var(--base-white, #ffffff);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__item:last-child .pagination__link:hover::before {
+  background-color: var(--base-white, #ffffff);
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
