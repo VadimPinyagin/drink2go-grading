@@ -27,7 +27,7 @@
           <a class="main-nav__basket" href="#">
             <span class="main-nav__basket-enter">Корзина</span>
           </a>
-          <button class="main-nav__btn btn-burger" type="button">
+          <button class="main-nav__btn btn-burger js-toggle-button" type="button">
             <span class="visually-hidden">Открыть/закрыть меню</span>
           </button>
           <ul class="main-nav__list">
@@ -41,12 +41,12 @@
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
-      <section class="slider">
+      <section class="slider" data-test="hero">
         <div class="container">
           <h2 class="visually-hidden">Слайдер.Новинки</h2>
-          <div class="slider__wrapper" data-test="hero">
-            <button class="slider__prev" aria-label="Предыдущий" type="button"></button>
-            <button class="slider__next" aria-label="Следующий" type="button"></button>
+          <div class="slider__wrapper slider-pagination">
+            <button class="slider__prev slider-button-prev" aria-label="Предыдущий" type="button"></button>
+            <button class="slider__next slider-button-next" aria-label="Следующий" type="button"></button>
             <div class="slider__item slide" data-color="decaf-flute-white">
               <h3 class="slide__title">Декаф Флэт Уайт</h3>
                 <picture>
@@ -372,7 +372,7 @@
             <address class="footer__contacts-address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
             <a class="footer__contacts-phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
           </div>
-          <a class="footer__developer" href="#">Разработано в HTML Academy</a>
+          <a class="footer__developer" href="https://htmlacademy.ru/">Разработано в HTML Academy</a>
         </nav>
       </div>
     </footer>
