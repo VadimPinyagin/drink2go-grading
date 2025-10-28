@@ -6,13 +6,10 @@
   @media (min-width: $tablet-width) {
     width: 728px;
   }
-}
 
-.footer__social {
-  @media (min-width: $tablet-width) {
-    column-gap: 380px;
-    grid-row: 1;
-    grid-column: 1 / 4;
+  @media (min-width: $desktop-width) {
+    width: 1380px;
+    padding-block-end: 30px;
   }
 }
 
@@ -63,11 +60,21 @@
     @media (min-width: $tablet-width) {
       right: 261px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 586px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     grid-row: 4;
     grid-column: 1/4;
     padding-block: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
   }
 }

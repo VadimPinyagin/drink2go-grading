@@ -16,10 +16,11 @@
     padding-block: 50px 30px;
     padding-inline: 30px;
     column-gap: 98px;
+    border-radius: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 1px;
+    column-gap: 0px;
   }
 }
 
@@ -67,6 +68,10 @@
   justify-content: flex-end;
   padding-inline-end: 20px;
   column-gap: 5px;
+
+  @media (min-width: $desktop-width) {
+    justify-self: end;
+  }
 
   &::before {
     content: "";

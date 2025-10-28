@@ -3,3 +3,11 @@
     padding-block-start: 5px;
   }
 }
+
+.logo__footer-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}

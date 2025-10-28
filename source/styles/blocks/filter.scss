@@ -35,8 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block-start: 20px;
-    padding-inline-start: 2px;
+    padding-block: 19px;
   }
 }
 
@@ -47,7 +46,7 @@
   grid-template-columns: repeat(3, auto);
 
   @media (min-width: $desktop-width) {
-    column-gap: 75px;
+    column-gap: 77px;
   }
 }
 
@@ -94,7 +93,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 318px;
+    width: 310px;
+    margin-block-end:33px;
   }
 }
 
@@ -231,6 +231,7 @@
 
   @media (min-width: $desktop-width) {
     padding-inline-start: 0;
+    padding-block-end: 30px;
   }
 }
 
@@ -244,8 +245,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 19px 20px;
-    padding-inline-start: 2px;
+    padding-block: 17px 19px;
+    padding-inline-start: 0;
   }
 }
 
@@ -259,8 +260,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block-start: 0;
-    padding-inline-start: 2px;
+    padding-block: 0 19px;
+    padding-inline-start: 0;
   }
 }
 
@@ -404,6 +405,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: start;
+    column-gap: 27px;
   }
 }
 
@@ -467,4 +469,10 @@
     color: var(--base-white, #ffffff);
     cursor: default;
   }
+}
+
+.footer__map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

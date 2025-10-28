@@ -4,6 +4,10 @@
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(3, auto);
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 62px;
+  }
 }
 
 .footer-nav__list {
@@ -29,6 +33,11 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-inline-end: 66px;
+    padding-block-end: 26px;
+  }
 }
 
 .footer-nav__title {
@@ -39,7 +48,38 @@
   @media (min-width: $tablet-width) {
     grid-row: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    padding-block-start: 45px;
+  }
 }
+
+.footer-nav__title--media {
+  @media (min-width: $desktop-width) {
+    padding-inline-start: 32px;
+  }
+}
+
+.footer-nav__list--media {
+  @media (min-width: $desktop-width) {
+    padding-inline-start: 33px;
+    padding-inline-end: 34px;
+  }
+}
+
+.footer-nav__title:first-of-type {
+  @media (min-width: $tablet-width) {
+    padding-inline-end: 105px;
+  }
+}
+
+.footer-nav__title:last-of-type {
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 73px;
+  }
+}
+
 
 .footer-nav__link {
   @include footer-link-style;
