@@ -63,8 +63,7 @@
 
 .footer-nav__list--media {
   @media (min-width: $desktop-width) {
-    padding-inline-start: 33px;
-    padding-inline-end: 34px;
+    padding-inline: 33px 34px;
   }
 }
 
@@ -150,17 +149,5 @@
     height: 16px;
     background-image: url("../../icons/phone-icon.svg");
     background-repeat: no-repeat;
-  }
-}
-
-.footer-nav__title:first-of-type {
-  @media (min-width: $tablet-width) {
-    padding-inline-end: 105px;
-  }
-}
-
-.footer-nav__title:last-of-type {
-  @media (min-width: $tablet-width) {
-    padding-inline-start: 73px;
   }
 }
