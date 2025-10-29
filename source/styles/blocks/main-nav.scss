@@ -31,6 +31,7 @@
 .main-nav--is-close {
   .main-nav__list {
     display: none;
+    flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
       @include list-reset;
